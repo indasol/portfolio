@@ -1,0 +1,94 @@
+#footer {
+  background: #f7f7fa;
+}
+
+#footer .footer-inner {
+  width: 1160px;
+  margin: auto;
+  padding: 38px 0;
+  position: relative;
+}
+#footer .logo {
+  display: inline-block;
+  width: 100px;
+  height: 37px;
+  background: url("../img/gnb/jammy_logo_.svg") no-repeat;
+  background-size: contain;
+}
+#footer .copyright {
+  color: #babcc2;
+  font-size: 12px;
+  margin-top: 13px;
+  letter-spacing: -0.6px;
+}
+#footer .link {
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+}
+#footer .link li a {
+  font-family: Pretendard;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.65px;
+  text-align: left;
+  color: #babcc2;
+}
+#footer .link li {
+  display: inline-block;
+  float: left;
+}
+#footer .link li:first-child a {
+  border-right: 1px solid #dadce0;
+  padding-right: 12px;
+}
+#footer .link li:nth-child(2) a {
+  padding: 0 12px;
+  border-right: 1px solid #dadce0;
+}
+#footer .link li:last-child a {
+  padding-left: 12px;
+}
+@media (max-width: 1159px) and (min-width: 769px) {
+  #footer .footer-inner {
+    width: 100%;
+    padding: 38px 3.449vw;
+    box-sizing: border-box;
+  }
+  #footer .link {
+    right: 3.449vw;
+  }
+}
+@media (max-width: 768px) {
+  /*20220801*/
+  #footer .footer-inner {
+    padding: 31px 26px;
+  }
+/* 20220722 ì‹œìž‘[S] */
+  #footer .logo {
+    width: 109px;
+    height: 41px;
+  }
+
+  #footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #footer .link {
+    position: static;
+    right: unset;
+    bottom: unset;
+    margin: 21px 0 15px;
+  }
+  #footer .link li a{
+	font-size: 14px;
+  }
+  #footer .link li:first-child a {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  /* 20220722 ì¢…ë£Œ(E) */
+}

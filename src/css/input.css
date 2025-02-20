@@ -1,0 +1,88 @@
+input:focus, input::selection{
+    border: solid 1px #000;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background: none;
+    visibility: hidden;
+    position: relative;
+}
+input[type="checkbox"]:after{
+    content:'';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #dadce0;
+}
+
+input{ padding: 0 17px; border:1px solid #DADCE0; border-radius:4px; box-sizing: border-box; height:44px; display: inline-block; float: left; }
+input::placeholder{ color:#9B9DA3; font-size:14px; }
+input{ width: 100%; display: inline-block; }
+input:disabled{ background:#f9f9fa; }
+input::placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+input::-moz-placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+input::-webkit-input-placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+
+
+/* 정보레이아웃 */
+.info-list__item{ width: 100%; box-sizing: border-box; padding:20px 20px 30px; border-top: 12px solid #ecedf0; }
+.info-list__item .sub-title{ font-size: 15px; letter-spacing: -0.6px; }
+.info-list__item .txtWrap{ margin-top: 14px; font-size: 15px; line-height: 1.5; letter-spacing: -0.6px; text-align: left; color: #000;}
+.info-list__item .txtWrap p{ float: left; width: calc(100% - 75px); font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.5; letter-spacing: -0.7px; text-align: left; color: #19191a; }
+.info-list__item .txtWrap .btn--modify{ width:50px; height:30px; float: left; margin: 10px 0; margin-left: 25px; border:1px solid #dadce0; box-sizing: border-box; border-radius: 4px;  font-size: 12px; color:#9b9da3; }
+    /*아코디언*/
+.info-list__item--acordian{ position: relative; padding: 20px 20px 22px; }
+.info-list__item--acordian h4.sub-title{ display: inline-block; width: auto; height: 22px; line-height: 1.5; float: left; }
+.info-list__item--acordian .txtWrap{ width: calc(100% - 40px); height: 22px; line-height: 1.5; padding-right:40px; box-sizing: border-box; display: inline-block; float: right; text-align: right; margin-top: 0; }
+.info-list__item--acordian::after{ content: ''; display: block; clear: both; width:18px; height: 18px;
+    /* background: url(../img/icn_right_big.png) no-repeat;  */
+    background-size: contain; position: absolute; right: 20px; top: 22px;}
+    /*상품*/
+.info-list__item--product{  }
+.info-list__item--product .product-wrap{ margin-top:20px; }
+.info-list__item--product .product-wrap > span{ display: inline-block; margin-bottom:14px; font-size: 13px; letter-spacing: -0.65px; color:#000; }
+.info-list__item--product .product-wrap__detail{ width:100%; }
+.info-list__item--product .product-wrap__detail .img-wrap{ display: inline-block; float: left; width: 60px; height: 60px; border-radius:4px; overflow: hidden; }
+.info-list__item--product .product-wrap__detail .img-wrap img{ width: 100%; }
+.info-list__item--product .product-wrap__detail .text-wrap{ display: inline-block; margin-left:15px; width:calc(100% - 75px); letter-spacing: -0.56px; text-align: left; color: #202020;}
+.info-list__item--product .product-wrap__detail .text-wrap h5{ font-size: 14px; letter-spacing: -0.56px; text-align: left; color: #202020;}
+.info-list__item--product .product-wrap__detail .text-wrap em { font-size: 12px; display: inline-block; line-height: 1.5; letter-spacing: -0.48px; text-align: left; color: #9f9f9f; font-style: normal; font-stretch: normal; margin-top: 5px;}
+.info-list__item--product .product-wrap__detail .price{ margin-top:15px; font-size: 12px; }
+.info-list__item--product .product-wrap__detail .price span{ letter-spacing: -0.48px; text-align: left; color: #000; float: left; }
+.info-list__item--product .product-wrap__detail .price em{ color:#9b9da3; float: right; }
+
+/**/
+.item__sub-item{ margin-top: 21px; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #19191a;}
+.item__sub-item h5{ margin-bottom: 12px; font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.5; letter-spacing: -0.7px; text-align: left; color: #19191a;}
+
+/*휴대폰번호*/
+.item__sub-item--phone .divSelect div.select-box{ width:105px; height: 44px; display: inline-block; float: left; }
+.item__sub-item--phone .divSelect + input{ margin-left:10px; width:calc(100% - 115px); display:inline-block; float: left; }
+
+/*주소*/
+.item__sub-item--address .input-box{ height:53px; }
+.item__sub-item--address input{ margin-bottom:9px; height: 44px; }
+.item__sub-item--address .input-box:first-of-type input:first-of-type{ display: inline-block; width:calc(100% - 124px); margin-right:10px; }
+.btn--postNumber{ height: 44px; display: inline-block; font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.5; letter-spacing: -0.7px; text-align: center; color: #19191a; max-width:114px; padding:11px 20px; border-radius: 4px; border: solid 1px #dadce0; background-color: #fff; box-sizing: border-box;}
+
+/*주문자개인정보*/
+.item__sub-item--email{  }
+.item__sub-item--email input{ width:108px; display: inline-block; margin-right:7px; }
+.item__sub-item--email .select-box { display: inline-block; width:220px; padding: 12px 12px 13px 19px; border-radius: 4px; border: solid 1px #dadce0; background-color: #fff; }
+.item__sub-item--email .user-input-box { display: inline-block; width: 220px; padding: 12px 12px 13px 19px; border-radius: 4px; border: solid 1px #dadce0; background-color: #fff; margin-right: 0; }
+.info-list__item--point{ padding-bottom:20px; }
+
+.item__sub-item input{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.75px; text-align: left; }
+.condition{ display: inline-block; padding: 12px 0; font-family: Pretendard; font-size: 12px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #525357; }
+.item__sub-item input[error]{ border: solid 1px #f05252; }
+.item__sub-item.is-error .condition{ display: inline-flex; align-items: center; justify-content: left;color: #f05252; }
+.item__sub-item.is-error .condition::before{  width: 18px; height: 18px; display: inline-block; clear: both; content: ''; background: url(../img/common/icn_input_error.png) no-repeat; background-position: center; background-size: contain; }

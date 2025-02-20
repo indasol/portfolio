@@ -1,0 +1,21 @@
+body{ width: 100vw; height:100vh; overflow: hidden; }
+h2 { font-size: calc(100vw / 8); font-family: 'Roboto'; font-weight: bold; color: #000; outline: #f783d8; }
+@media screen and (min-width:1081px) {
+    .slickContainer ul li { width:calc(100% / 3); float: left; }
+}
+@media (max-width:1080px) and (min-width:769px) {
+    .slickContainer ul li { width:calc(100% / 3); float: left; }
+}
+@media screen and (max-width:769px) {
+    h2 { padding:20px 0; }
+    .slickContainer ul li { width:100%; float: left; }
+}
+.slickContainer ul li img { min-width: 100%; }
+
+.floatingBtn { width: 60px; height:60px; background: #333; border-radius: 100px; position: fixed; z-index: 15; bottom: 50px; right: 50px; }
+.floatingBtn:after{ content:''; display:block; width:100%; height:100%; position:absolute; top:0; right:0; background:url(../img/index/icn_floating_home01.png) no-repeat; background-position: center; background-size: 30px; }
+.floatingBtn button { width: 100%; height: 100%; }
+.floatingBtn a{ width: 100%; height: 100%; display: block;}
+.slick-arrow { width: 30px; height: 30px; font-size: 0; position:fixed; bottom:250px; z-index: 10; background-color: #f783d8; border-radius: 200px; }
+.slick-arrow.slick-prev{ left:50px; background: url(../img/index/icn_arrow_left.png); background-size: contain; }
+.slick-arrow.slick-next{ right:50px; background: url(../img/index/icn_arrow_right.png); background-size: contain; }

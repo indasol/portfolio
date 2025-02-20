@@ -1,0 +1,206 @@
+@charset "utf-8";
+@media screen and (min-width:769px){
+	.mo_on {display: none};
+}
+@media screen and (max-width:768px){
+	.pc_on {display: none};
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('../../public/font/NotoSansKR-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('../../public/font/NotoSansKR-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../../public/font/Pretendard/woff2/Pretendard-Black.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../../public/font/Pretendard/woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../../public/font/Pretendard/woff2/Pretendard-Bold.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../../public/font/Pretendard/woff2/Pretendard-SemiBold.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../../public/font/Pretendard/woff2/Pretendard-Medium.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../../public/font/Pretendard/woff2/Pretendard-Regular.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../../public/font/Pretendard/woff2/Pretendard-Light.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../../public/font/Pretendard/woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../../public/font/Pretendard/woff2/Pretendard-Thin.woff2') format('woff2'), url('../../public/font/Pretendard/woff/Pretendard-Thin.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../../public/font/Roboto/Roboto-Regular.ttf') format('ttf'), url('../../public/font/Roboto/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../../public/font/Roboto/Roboto-Bold.ttf') format('ttf'), url('../../public/font/Roboto/Roboto-Bold.ttf') format('ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Pretendard','';
+	vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body{
+	overflow-x: hidden;
+    width: 100%;
+}
+body {
+	width: 100vw;
+	overflow: hidden;
+	line-height: 1;
+    font-family: 'Pretendard';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select,input{
+	border:none;
+	outline: none;
+	line-height: 1;
+	font-family:'Pretendard';
+	font-style:normal;
+	font-weight:400;
+}
+button{
+	font-family:'Pretendard';
+	font-style:normal;
+	font-weight:400;
+	background: none;
+    border: none;
+    outline: none;
+	padding: 0;
+}
+input{ padding: 0 17px; border:1px solid #DADCE0; border-radius:4px; box-sizing: border-box; height:44px; display: inline-block; float: left; }
+input::placeholder{ color:#9B9DA3; font-size:14px; }
+input{ width: 100%; display: inline-block; }
+input:disabled{ background:#f9f9fa; }
+input::placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+input::-moz-placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+input::-webkit-input-placeholder{ font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.6px; text-align: left; color: #babcc2; }
+
+.is-active.select-box{ border: solid 1px #19191a !important; }
+
+#skip, #skip ul, #skipSitemap {
+    height: 0;
+    width: 100%;
+    z-index: 100000;
+	overflow: hidden;
+}
+
+img{ width:100%; display: inline-block; }
+
+.cf:after{ display: block; content:''; clear:both; }
+
+.intro .obj.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+.obj img{
+    width: 100%;
+}

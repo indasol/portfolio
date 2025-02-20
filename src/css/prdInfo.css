@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/*상품상세 구조*/
+.container{ margin-bottom: 0; }
+.content { padding-top: 0; }
+.prdInfo{ width:100%; display: inline-block; }
+.prdInfo > div{ width:calc(100% - 460px); display: inline-block; float: left; }
+.pict{ height: 780px; overflow: hidden; }
+.pict img{ height: 100%; width: auto; }
+
+/*tab*/
+.tab{ width:100%; }
+.tab ul li{ width:50%; float: left; text-align: center; }
+.tab ul li a { display: inline-flex; align-items: center; justify-content: center; color:#BABCC2; height:72px; width:100%; font-family: 'Pretendard'; font-weight: 700; }
+.tab ul li.is-active a{ color:#000; border-bottom:solid 1.3px #000;  }
+.tab_contents img{ display: block; }
+
+/*고정구매버튼영역*/
+.prdInfo > .fixedArea{ width: 460px; display: inline-block; float: right; position: absolute; padding-left:50px; float: right; box-sizing: border-box; }
+.fixedArea.no-active { position: absolute; bottom: 0; top: unset; }
+.fixedArea .area_wrap{  }
+.gram { margin-bottom: 10px; font-family: Pretendard; font-size: 16px; font-weight: 600; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.8px; text-align: left; color: #000; }
+.fixedArea .subTxt{ max-width: calc(100% - 110px); display: inline-block; font-size: 13px; color:#525357; margin-bottom:14px; }
+.fixedArea .mainTxt{ max-width: calc(100% - 110px); font-size: 24px; letter-spacing: -0.4px; margin-bottom:30px; line-height: 1.3; }
+.fixedArea .adTxt{ display: inline-block;  color:#525357; font-size: 14px; letter-spacing: -0.5px; margin-bottom:26px; line-height: 1.5; }
+.fixedArea .textArea{ width: 100%; border-top:0.5px solid #DADCE0; padding-top:15px; margin-bottom: 30px; }
+.fixedArea .textArea li{ width: 100%; font-size: 13px; padding:5px 0; }
+.fixedArea .textArea li a{  color:#363638; }
+.select-box{ width:100%; position: relative; min-height: 44px; padding:15px; box-sizing: border-box; color:#000; font-size:14px; border:1px solid #dadce0; border-radius: 4px; margin-bottom:10px; background:url(../img/common/icn_right_big.png) no-repeat; background-position: calc(100% - 18px); background-size: 18px 18px; }
+.select-box:last-child{ margin-bottom: 0; }
+.select-box.is-active{ border:1px solid #19191a; background:url(../img/common/icn_top_big.png) no-repeat; background-position: calc(100% - 18px); background-size: 18px 18px; border-radius: 4px 4px 0 0; }
+.select-box > .option-list{ background: #fff; border:1px solid #DADCE0; display:none; position: absolute;top: 44px; right: 0; left: -1px; width: 100%; height: auto; z-index: 10; overflow-x: hidden; overflow-y: scroll; max-height: 110px; }
+.select-box.is-active > .option-list{ display: block; border:1px solid #19191a; border-radius: 0 0 4px 4px; box-sizing: border-box; }
+.select-box .option-list li{ width:100%; height: 44px; display: inline-flex; align-items: center; justify-content: left; padding-left: 16px; }
+.select-box .option-list li:hover{ background: #F9F9FA; }
+    /*선택한 상품리스트*/
+.product-list  { margin-top:20px; }
+.product-list .product-list__item{ background:#F9F9FA; border-radius: 4px; padding:20px 15px; font-size: 12px; position: relative; box-sizing: border-box; margin-bottom: 12px; }
+.product-list .product-list__item:last-child{ margin-bottom: 0; }
+.product-list .product-list__item h5{ margin-bottom:12px; font-size: 12px; letter-spacing: -0.6px; color:#19191a; }
+.product-list .product-list__item .btn--delete{ width:30px; height:30px; z-index: 5; background:url(../img/common/icn_close_small.png) no-repeat; background-size: 15px; position: absolute; top: 20px; right:0px; }
+.product-list .product-list__item .divQuantity{ display: inline-block; min-width:107px; height:32px; box-sizing: border-box; border:1px solid #dadce0; border-radius: 4px; overflow: hidden; background: #fff; }
+.product-list .product-list__item .divQuantity button{ display: inline-block; width:28px; height:32px; float: left; }
+.product-list .product-list__item .divQuantity span{ display: inline-flex; padding:0 5px; align-items: center; justify-content: center; height:32px; min-width: 47px; max-width: 80px;  border-left:1px solid #dadce0; border-right:1px solid #dadce0; float: left; }
+.product-list .product-list__item .divQuantity .btn--minus{ background:url(../img/common/icn_minus.png) no-repeat; background-size: 8px; background-position: center; }
+.product-list .product-list__item .divQuantity .btn--plus{ background:url(../img/common/icn_plus.png) no-repeat; background-size: 8px; background-position: center; }
+.product-list .product-list__item .total{ height:32px; display: inline-flex; align-items: center; justify-content: bottom; float: right; font-size: 14px; }
+    /*총액*/
+.finalPrice{  }
+.finalPrice ul{  }
+.finalPrice ul li{ font-style: normal; display: inline-flex; padding: 25px 0; line-height: 1; align-items: center; height: 63px; box-sizing: border-box; }
+.finalPrice ul li:first-child{ float:left; min-width:120px; }
+.finalPrice ul li:last-child{ float: right; }
+.finalPrice em{ color:#9B9DA3; font-size: 12px; font-style: normal; }
+.finalPrice span{ font-size: 13px; margin-right:4px; }
+.finalPrice ul li:last-child .price{ font-size: 22px; color:#000; letter-spacing: -1.1px; }
+.finalPrice ul li:last-child em{ font-size: 13px; color:#000; }
+
+.keyText{ position: relative; overflow: hidden; }
+.btn-list--icon{ position: absolute; right: 0; top: 0; }
+.btn-list--icon ul li{ float: left; }
+.btn-list--icon ul li:first-child{ margin-right: 12px; }
+.btn-list.one-button li button{ border-radius: 4px; background-color: #000; font-size: 15px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.45px; text-align: center; color: #fff; }
+.btn-list a { width: 100%; height: 100%; display: inline-flex; align-items: center; justify-content: center; }
+/* --------------------------------------------------------------------------- */
+/* -------------------------------- pc 작업 ----------------------------------- */
+.area_wrap--mo, .btn-list--mo, .pc #optionSelectModal, .mobile .fixedArea .product-list, .mo .fixedArea .product-list { display: none; }
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------ 모바일 작업 --------------------------------- */
+@media (max-width:768px){
+    .btn-list--icon{ top: 24px; right: 16px; }
+    .fixedArea{ display: none; border-bottom: 12px solid #ecedf0;}
+    .btn-list--mo { display: block; border: none; outline: none; }
+
+    /*ui*/
+    .bdbt20{ border-bottom: 12px solid #ecedf0; }
+    .pd20{ width:100%; padding-left: 20px; box-sizing: border-box; }
+    .bdtp20{ border-top: 12px solid #ecedf0; }
+
+    /*공통구조*/
+    .wrap{ width: 100%; overflow: hidden; }
+    .container{ width: 100%; margin-bottom: 0; }
+
+    /*모바일--상품설명*/
+    .fixedArea .btn-list { display: none; }
+    .fixedArea .textArea{ margin-bottom: 0; }
+    .fixedArea .keyText{ padding-top: 29px; }/* 20220728 추가 */
+    .fixedArea .mo_on .keyText{ border-bottom:none; }
+    .fixedArea .mo_on .gram{ margin-bottom: 28px; }
+    .fixedArea .subTxt{ display: inline-block; color:#525357; letter-spacing: -0.6px; font-size: 12px; margin-bottom:10px; }
+    .fixedArea .mainTxt{ font-size: 22px; letter-spacing: -0.88px; line-height: 1.3; margin-bottom:18px; }
+    .fixedArea .adTxt{ font-size: 12px; letter-spacing: -0.65px; color:#363638; line-height: 1.5; margin-bottom:20px; }/* 20220728 추가 */
+    .fixedArea .textArea { padding:20px 0; }
+    .fixedArea .textArea li{ margin-bottom:0px; }
+    .fixedArea .textArea li a{ font-size: 11px; color:#363638; letter-spacing: -0.55px; }
+
+    /*상품설명*/
+    .prdInfo { width:100%; }
+    .prdInfo > div{ width: 100%; }
+    .prdInfo > .fixedArea{ width: 100%;float: none; position: static; padding: 0 20px; }/* 20220728 추가 */
+    .pict{ height: auto; }
+    .prdInfo img{ display: block; width: 100%; height: auto; min-height:100%; }
+    .product-list .product-list__item h5{ margin-bottom: 20px; }
+
+    .tab ul li a{ height:52px; font-size: 15px; }
+
+    .fixedArea{ display:none;}
+    .prdInfo > div{ width:100%; }
+    .pict img{ width:100%; height:auto; }
+    .gram { margin-bottom: 28px; }
+
+    .btn--like,.btn--share{ width: 24px; height: 24px; }/* 20220728 추가 */
+}
+@media (min-width:1160px) {
+    .prdInfo > .fixedArea{ position:fixed; top:110px; }
+}
+@media (min-width:769px) and (max-width:1159px){
+    .container{ width:100%; padding: 0 20px; box-sizing: border-box; }
+    .prdInfo > .fixedArea{ display:none;}
+    .prdInfo > div{ width:100%; }
+    .pict img{ width:100%; height:auto; }
+    .gram { margin-bottom: 28px; }
+}
+
+@media (max-width:403px){
+	.fixedArea .mainTxt{
+		font-size:14px;
+	}
+}
+
+
+.sub-info{
+	border-top:1px solid #dadce0;
+	padding: 14px 0;
+ }
+
+ .sub-info ul li {
+	padding: 8px 0;
+ }
+
+.sub-info ul li .name{
+	width: 100px;
+	display: inline-block;
+	float: left;
+	font-size: 15px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.75px;
+	text-align: left;
+	color: #363638;
+}
+
+.sub-info ul li .label{
+    max-width: calc(100% - 100px);
+    display: inline-flex;
+    float: left;
+    font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: #363638;
+  align-items: center;
+    justify-content: left;
+	line-height:1.35;
+}
+.noti{
+    margin: 19px 0 28px;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    text-align: left;
+    color: #9b9da3;
+}
+.btn--goods-info{
+    width: 137px;
+}
+.btn--goods-info:after{
+    background:url(../img/common/icn_right_small.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    content: '';
+    clear: both;
+    margin-left: 5px;
+}
+.info--filled-gray{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../img/common/icn_laptop_small.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
