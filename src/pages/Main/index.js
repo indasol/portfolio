@@ -4,7 +4,7 @@ window.$ = $;
 
 // 20220720 스크립트 전부 수정
 var slickFlag;
-
+console.log("main")
 $(document).ready(function(){
     $(".f01 .swiper-wrapper").slick({
         arrows:true,
