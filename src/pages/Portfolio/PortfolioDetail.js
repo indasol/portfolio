@@ -20,7 +20,7 @@ function PortfolioDetail() {
 
      React.useEffect(() => {
           axios({
-               url:'../../json/portfolio-data.json',
+               url:process.env.PUBLIC_URL + '/json/portfolio-data.json',
                method:'GET'
           })
           .then((res)=>{
@@ -89,7 +89,7 @@ function PortfolioDetail() {
                                         </li>
                                         <li className="cf">
                                              <span className="name">팀인원</span>
-                                             <em className="label label--time">1 ~ 3명</em>
+                                             <em className="label label--time">{ state.PortfolioDetail.teamCnt }</em>
                                         </li>
                                         <li className="cf">
                                              <span className="name">작업화면</span>
@@ -126,7 +126,7 @@ function PortfolioDetail() {
                                    <div className="image-wrap">
                                         <img
                                         src={`${process.env.PUBLIC_URL}/img/stationery/prd_detail${state.PortfolioDetail.detailIndex}.png`}
-                                        alt="하나원큐"
+                                        alt={state.PortfolioDetail.imgAlt}
                                         />
                                    </div>
                               </div>
