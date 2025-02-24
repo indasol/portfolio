@@ -20,7 +20,7 @@ function Portfolio() {
 
   React.useEffect(()=>{
     axios({
-        url:'../../json/portfolio-data.json',
+        url:process.env.PUBLIC_URL+'/json/portfolio-data.json',
         method:'GET'
     })
     .then((res)=>{

@@ -60,12 +60,12 @@ function main () {
             <Slider {...settings_main} >
               <div className="swiper-slide">
                 <img
-                  src="../img/main/banner_mo_01.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_mo_01.png`}
                   className="mo_on"
                   alt=""
                 />
                 <img
-                  src="../img/main/banner_pc_01.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_pc_01.png`}
                   className="pc_on"
                   alt=""
                 />
@@ -78,12 +78,12 @@ function main () {
               </div>
               <div className="swiper-slide">
                 <img
-                  src="../img/main/banner_mo_02.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_mo_02.png`}
                   className="mo_on"
                   alt=""
                 />
                 <img
-                  src="../img/main/banner_pc_02.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_pc_02.png`}
                   className="pc_on"
                   alt=""
                 />
@@ -95,12 +95,12 @@ function main () {
               </div>
               <div className="swiper-slide">
                 <img
-                  src="../img/main/banner_mo_03.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_mo_03.png`}
                   className="mo_on"
                   alt=""
                 />
                 <img
-                  src="../img/main/banner_pc_03.png"
+                  src={`${process.env.PUBLIC_URL}/img/main/banner_pc_03.png`}
                   className="pc_on"
                   alt=""
                 />
@@ -125,7 +125,7 @@ function main () {
                   alt=""
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_10_m.png" alt="SPC"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_10_m.png`} alt="SPC"/>
                   </div>
                   <div className="txt">SPC</div>
                 </Link>
@@ -137,7 +137,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_11_m.png" alt="하나증권"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_11_m.png`} alt="하나증권"/>
                   </div>
                   <div className="txt">하나증권</div>
                 </Link>
@@ -149,7 +149,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_13_m.png" alt="부산외대" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_13_m.png`} alt="부산외대" />
                   </div>
                   <div className="txt">부산외대</div>
                 </Link>
@@ -161,7 +161,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_12_m.png" alt="성동구청" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_12_m.png`} alt="성동구청" />
                   </div>
                   <div className="txt">성동구청</div>
                 </Link>
@@ -173,7 +173,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_14_m.png" alt="서울평생교육원" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_14_m.png`} alt="서울평생교육원" />
                   </div>
                   <div className="txt">서울평생교육원</div>
                 </Link>
@@ -185,7 +185,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_1_m.png" alt="하나은행" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_1_m.png`} alt="하나은행" />
                   </div>
                   <div className="txt">하나은행</div>
                 </Link>
@@ -193,7 +193,7 @@ function main () {
               <li>
                 <Link to="https://jammy.lge.co.kr/" target="_blank" role="button">
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_2_m.png" alt="LG전자" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_2_m.png`} alt="LG전자" />
                   </div>
                   <div className="txt">LG전자</div>
                 </Link>
@@ -205,7 +205,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_3_m.png" alt="경동나비엔" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_3_m.png`} alt="경동나비엔" />
                   </div>
                   <div className="txt">경동나비엔</div>
                 </Link>
@@ -217,7 +217,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_6_m.png" alt="LG전자 VR쇼룸" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_6_m.png`} alt="LG전자 VR쇼룸" />
                   </div>
                   <div className="txt">LG전자 VR쇼룸</div>
                 </Link>
@@ -229,7 +229,7 @@ function main () {
                   role="button"
                 >
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_4_m.png" alt="흥국화재" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_4_m.png`} alt="흥국화재" />
                   </div>
                   <div className="txt">흥국화재</div>
                 </Link>
@@ -237,7 +237,7 @@ function main () {
               <li>
                 <Link to="" target="_blank" role="button">
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_5_m.png" alt="인생네컷X망고데이" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_5_m.png`} alt="인생네컷X망고데이" />
                   </div>
                   <div className="txt">인생네컷X망고데이</div>
                 </Link>
@@ -246,7 +246,7 @@ function main () {
               <li>
                 <Link to="https://www.4cgate.com/" target="_blank" role="button">
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_7_m.png" alt="4cgate" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_7_m.png`} alt="4cgate" />
                   </div>
                   <div className="txt">4cgate</div>
                 </Link>
@@ -254,7 +254,7 @@ function main () {
               <li>
                 <Link to="http://gjea.org/" target="_blank" role="button">
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_8_m.png" alt="광주시기업인협회" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_8_m.png`} alt="광주시기업인협회" />
                   </div>
                   <div className="txt">광주시기업인협회</div>
                 </Link>
@@ -262,7 +262,7 @@ function main () {
               <li>
                 <Link to="http://sesa.co.kr/" target="_blank" role="button">
                   <div className="obj">
-                    <img src="../img/main/f01_artist_list_9_m.png" alt="세사" />
+                    <img src={`${process.env.PUBLIC_URL}/img/main/f01_artist_list_9_m.png`} alt="세사" />
                   </div>
                   <div className="txt">세사</div>
                 </Link>
@@ -277,7 +277,7 @@ function main () {
           <li>
             <Link to="#">
               <div className="obj">
-                <img src="../img/common/digital_shop_01_m.png" className="" alt=""/>
+                <img src={`${process.env.PUBLIC_URL}/img/common/digital_shop_01_m.png`} className="" alt=""/>
               </div>
               <div className="txt">
                 <h3>장점 하나,책임감</h3>
@@ -291,7 +291,7 @@ function main () {
           <li>
             <Link to="#">
               <div className="obj">
-                <img src="../img/common/digital_shop_02_m.png" className="" alt=""/>
+                <img src={`${process.env.PUBLIC_URL}/img/common/digital_shop_02_m.png`} className="" alt=""/>
               </div>
               <div className="txt">
                 <h3>장점 둘,끈기</h3>
