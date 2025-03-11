@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useLocation } from 'react-router-dom';
 
 const detailIndex = createSlice({
      name: '포트폴리오인덱스리듀서',

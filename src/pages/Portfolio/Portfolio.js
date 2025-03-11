@@ -3,8 +3,7 @@ import '../../css/prdList.css'
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { setDetailIndex } from '../../store/detailIndex';
-import { useLocation } from 'react-router-dom';
-import { Outlet, Link } from 'react-router-dom'; // 아울렛 컴포넌트(네비게이션, 컴폰넌트가 나타날박스)
+import { Link } from 'react-router-dom'; // 아울렛 컴포넌트(네비게이션, 컴폰넌트가 나타날박스)
 
 function Portfolio() {
   const [state, setState] = React.useState({
@@ -20,7 +19,7 @@ function Portfolio() {
 
   React.useEffect(()=>{
     axios({
-        url:'../../json/portfolio-data.json',
+        url:process.env.PUBLIC_URL+'/json/portfolio-data.json',
         method:'GET'
     })
     .then((res)=>{

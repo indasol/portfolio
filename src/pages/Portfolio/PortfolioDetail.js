@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import '../../css/prdInfo.css'
 import { Link } from 'react-router';
-import { setDetailIndex, getDetailIndex, getStateDetailIndex } from '../../store/detailIndex.js'
+import { getStateDetailIndex } from '../../store/detailIndex.js'
 
 function PortfolioDetail() {
      const selector = useSelector((state)=>state.detailIndex);
@@ -52,16 +52,6 @@ function PortfolioDetail() {
                          <div className="fixedArea">
                               <div className="area_wrap jca-option-window-pc">
                                    <div className="keyText">
-                                        <div className="btn-list--icon">
-                                             <ul className="cf">
-                                                  <li>
-                                                       <button type="button" onClick="" className="btn btn--like jca-like-btn"></button>
-                                                  </li>
-                                                  <li>
-                                                       <button type="button" onClick="" className="btn btn--share"></button>
-                                                  </li>
-                                             </ul>
-                                        </div>
                                         <span className="subTxt" dangerouslySetInnerHTML={{__html: state.PortfolioDetail.subTxt }} />
                                         <h3 className="mainTxt fw--bold" dangerouslySetInnerHTML={{__html: state.PortfolioDetail.mainTxt }} />
                                         <em className="adTxt fw--rgl" dangerouslySetInnerHTML={{__html: state.PortfolioDetail.adTxt }} />
@@ -97,10 +87,9 @@ function PortfolioDetail() {
                                         </li>
                                         </ul>
                                         <div className="noti">
-                                        <span
-                                             >※ 현재 하나원큐 앱에서 상품을 제외한 모든 화면은 모두 직접
-                                             작업하였습니다.</span
-                                        >
+                                             <span
+                                                  >※ 보안 문제로 바로가기 선택 시 링크 이동이 안될 수 있습니다.
+                                             </span>
                                         </div>
                                    </div>
 
@@ -134,7 +123,7 @@ function PortfolioDetail() {
                     </div>
                </div>
           </div>
-     );
+     )
 }
 
 export default PortfolioDetail;

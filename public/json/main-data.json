@@ -1,0 +1,89 @@
+{
+    "adList" : [
+        {
+            "name" : "하나은행",
+            "pcimg" : "/img/main/banner_pc_01.png",
+            "moimg" : "/img/main/banner_mo_01.png",
+            "link" : "https://play.google.com/store/apps/details?id=com.kebhana.hanapush&hl=ko"
+        },
+        {
+            "name" : "경동나비엔",
+            "pcimg" : "/img/main/banner_pc_02.png",
+            "moimg" : "/img/main/banner_mo_02.png",
+            "link" : "https://sweetdream.navienhouse.com/"
+        },
+        {
+            "name" : "LG전자",
+            "pcimg" : "/img/main/banner_pc_03.png",
+            "moimg" : "/img/main/banner_mo_03.png",
+            "link" : "https://jammy.lge.co.kr/"
+        }
+    ],
+    "portfolioList" : [
+        {
+            "name" : "SPC",
+            "link" : "https://spcstt.spc.co.kr/",
+            "img" : "/img/main/f01_artist_list_10_m.png"
+        },
+        {
+            "name" : "하나증권",
+            "link" : "https://ipcc-stt.hanaw.com:18080",
+            "img" : "/img/main/f01_artist_list_11_m.png"
+        },
+        {
+            "name" : "부산외대",
+            "link" : "https://flec.bufs.ac.kr/uat/uia/egovLoginUsr.do?status=fail",
+            "img" : "/img/main/f01_artist_list_13_m.png"
+        },
+        {
+            "name" : "성동구청",
+            "link" : "https://minwonai.sd.go.kr/",
+            "img" : "/img/main/f01_artist_list_12_m.png"
+        },
+        {
+            "name" : "서울평생교육원",
+            "link" : "https://slei.seoul.kr/",
+            "img" : "/img/main/f01_artist_list_14_m.png"
+        },
+        {
+            "name" : "하나은행",
+            "link" : "https://play.google.com/store/apps/details?id=com.kebhana.hanapush&hl=ko",
+            "img" : "/img/main/f01_artist_list_1_m.png"
+        },
+        {
+            "name" : "LG전자",
+            "link" : "https://jammy.lge.co.kr/",
+            "img" : "/img/main/f01_artist_list_2_m.png"
+        },
+        {
+            "name" : "경동나비엔",
+            "link" : "https://sweetdream.navienhouse.com/",
+            "img" : "/img/main/f01_artist_list_3_m.png"
+        },
+        {
+            "name" : "흥국화재",
+            "link" : "https://www.heungkukfire.co.kr/LCW/login.do",
+            "img" : "/img/main/f01_artist_list_4_m.png"
+        },
+        {
+            "name" : "인생네컷X망고데이",
+            "link" : "",
+            "img" : "/img/main/f01_artist_list_5_m.png"
+        },
+        {
+            "name" : "4cgate",
+            "link" : "https://www.4cgate.com/",
+            "img" : "/img/main/f01_artist_list_7_m.png"
+        },
+        {
+            "name" : "광주시기업인협회",
+            "link" : "http://gjea.org/",
+            "img" : "/img/main/f01_artist_list_8_m.png"
+        },
+        {
+            "name" : "세사",
+            "link" : "http://sesa.co.kr/",
+            "img" : "/img/main/f01_artist_list_9_m.png"
+        }
+    ]
+}

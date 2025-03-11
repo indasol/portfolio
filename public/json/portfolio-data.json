@@ -47,7 +47,7 @@
                "taskDetail" : "UI 설계, DB 설계, API 개발, 화면 및 JAVA 개발",
                "teamCnt" : "5명",
                "taskList" : "진단평가, 단어 관리 게시판, 공지사항, 단어 문제 풀이 화면, 단어 문제 결과 화면",
-               "url" : ""
+               "url" : "https://flec.bufs.ac.kr/uat/uia/egovLoginUsr.do?status=fail"
           },
           {
                "title" : "성동구청<br />스마트 민원서식 키오스크",

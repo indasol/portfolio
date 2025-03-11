@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -14,9 +14,9 @@ import './css/common.css'
 window.$ = $;
 
 function App() {
-
+  console.log(process.env.PUBLIC_URL)
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter >
       <Header />
       <Routes>
         <Route path="/" element={<Main />}></Route>
