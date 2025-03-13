@@ -1,22 +1,19 @@
 import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './pages/Main/Main'
 import NotFound from './pages/NotFound'
 import Portfolio from './pages/Portfolio/Portfolio'
 import PortfolioDetail from './pages/Portfolio/PortfolioDetail'
 import Contact from './pages/Contact/Contact'
 import About from './pages/About/About'
-import $ from 'jquery'
 import './css/common.css'
-
-window.$ = $;
 
 function App() {
   console.log(process.env.PUBLIC_URL)
   return (
-    <BrowserRouter >
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Main />}></Route>
@@ -28,7 +25,7 @@ function App() {
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

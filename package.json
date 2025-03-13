@@ -2,6 +2,27 @@
   "name": "dasol",
   "version": "0.1.0",
   "private": true,
+  "description": "깃허브 접속 리포지토리(폴더) 생성 weekKurly https://moonjongjs.github.io/weekKurly",
+  "homepage": "https://indasol.github.io/portfolio/",
+  "bugs": {
+    "url": "https://github.com/indasol/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indasol/portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
     "axios": "^1.7.9",
@@ -17,19 +38,11 @@
     "redux-persist": "^6.0.0",
     "slick-carousel": "^1.8.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
+    "url-loader": "^4.1.1",
+    "web-vitals": "^4.2.4"
   },
   "browserslist": {
     "production": [
@@ -43,11 +56,15 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "file-loader": "^6.2.0",
-    "gh-pages": "^6.3.0",
-    "url-loader": "^4.1.1",
-    "web-vitals": "^4.2.4"
-  },
-  "homepage": "http://indasol.co.kr/portfolio/"
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
 }

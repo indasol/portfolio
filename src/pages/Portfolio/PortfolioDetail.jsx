@@ -20,7 +20,7 @@ function PortfolioDetail() {
 
      React.useEffect(() => {
           axios({
-               url:'../../json/portfolio-data.json',
+               url:process.env.PUBLIC_URL+'/json/portfolio-data.json',
                method:'GET'
           })
           .then((res)=>{
@@ -115,7 +115,7 @@ function PortfolioDetail() {
                                    <div className="image-wrap">
                                         <img
                                         src={`${process.env.PUBLIC_URL}/img/stationery/prd_detail${state.PortfolioDetail.detailIndex}.png`}
-                                        alt="하나원큐"
+                                        alt={state.PortfolioDetail.imgAlt}
                                         />
                                    </div>
                               </div>

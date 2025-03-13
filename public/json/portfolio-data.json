@@ -57,7 +57,7 @@
                "tag" : "#java,#oracle,#jsp,#javascript",
                "detailIndex" : "12",
                "subTxt" : "성동구청",
-               "mainTxt" : "하나원큐앱 메인,이체,결제 등<br />화면 개선",
+               "mainTxt" : "성동구청 <br />스마트 민원서식 작성 도우미 키오스크",
                "adTxt" : "<b>성동구청 스마트 민원서식 사이트</b>에서 지금 바로 <b>확인 </b>가능하세요 👀",
                "skill" : "ORACLE, SPRING BOOT, JAVA, JSP, JAVASCRIPT",
                "taskDetail" : "UI 설계, API 개발, 화면 및 JAVA 개발",

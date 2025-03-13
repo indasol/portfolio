@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/prdList.css'
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { setDetailIndex } from '../../store/detailIndex';
+import { setDetailIndex } from '../../store/detailIndex.js';
 import { Link } from 'react-router-dom'; // 아울렛 컴포넌트(네비게이션, 컴폰넌트가 나타날박스)
 
 function Portfolio() {
